@@ -7,13 +7,14 @@ export const profile = {
   linkedin: "https://linkedin.com/in/jonathanthangadurai",
   phone: "+31 6 3057 3697",
   headline:
-    "I turn complex technical and organisational problems into systems, products, and workflows people can rely on.",
+    "I help turn complex technology and applied research into products people can use, trust and scale.",
   intro:
-    "I work across technical product ownership, enterprise integration and applied research. My strength is connecting stakeholder needs with technical reality—bringing clarity to ambiguous problems and helping multidisciplinary teams move from discovery to dependable delivery.",
+    "My background spans enterprise engineering, technical product ownership and applied research. I work in the space between what technology makes possible and what organisations can successfully adopt—connecting user needs, technical design, validation, business value and practical delivery.",
 };
 
 export const navItems = [
   { label: "About", href: "#about" },
+  { label: "Approach", href: "#research" },
   { label: "Work", href: "#work" },
   { label: "Experience", href: "#experience" },
   { label: "Capabilities", href: "#capabilities" },
@@ -24,8 +25,37 @@ export const navItems = [
 export const aboutParagraphs = [
   "I began my career close to the technology, designing and delivering enterprise integrations across manufacturing, workforce, identity and operational systems. That experience taught me how technical decisions affect real processes, teams and users.",
   "My work has since expanded into product ownership, applied research, multi-stakeholder project delivery and organisation design. Today, I am most interested in work that requires both technical understanding and the ability to create alignment across different disciplines.",
-  "I enjoy situations where the problem is still unclear, several perspectives need to be reconciled, and the eventual solution must be both technically sound and genuinely useful.",
+  "I enjoy situations where the problem is still unclear, several perspectives need to be reconciled, and the eventual solution must be both technically sound and genuinely useful—problems whose consequences extend well beyond the screen.",
 ];
+
+export const researchToProduct = {
+  label: "Research to real-world value",
+  heading: "A promising idea is only the beginning.",
+  body: [
+    "I am especially interested in the journey between technical possibility and real-world adoption. Research can demonstrate what is possible, but turning it into a valuable product introduces a different set of questions: Who needs it? Which problem does it solve? What level of quality is required? How should it fit into existing workflows? What would make an organisation willing and able to adopt it?",
+    "I enjoy helping teams answer those questions—combining discovery, product thinking, technical understanding and stakeholder alignment to move promising concepts toward dependable use.",
+  ],
+  stages: [
+    {
+      title: "Discover the value",
+      body: "Identify users, unmet needs, operational pain points and promising applications through stakeholder and market discovery.",
+    },
+    {
+      title: "Shape the product",
+      body: "Turn broad possibilities into defined use cases, requirements, acceptance criteria, architecture decisions and a prioritised roadmap.",
+    },
+    {
+      title: "Prove what works",
+      body: "Test outputs with users, validate technical assumptions, measure quality and refine the product through evidence rather than enthusiasm alone.",
+    },
+    {
+      title: "Prepare for adoption",
+      body: "Develop the business case, cost model, governance, stakeholder ownership and implementation path needed for a solution to survive beyond its initial prototype.",
+    },
+  ],
+  quote:
+    "I am most interested in the moment when a promising technical idea has to prove that it can become genuinely useful.",
+};
 
 export const atAGlance = [
   "Based in Amsterdam",
