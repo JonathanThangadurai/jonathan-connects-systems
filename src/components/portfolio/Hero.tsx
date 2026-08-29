@@ -8,9 +8,8 @@ export function Hero() {
         <div>
           <p className="label-mono">{profile.name}</p>
           <h1 className="mt-6 text-[2rem] font-semibold leading-[1.12] tracking-tight text-foreground sm:text-4xl md:text-5xl md:leading-[1.08]">
-            I turn complex technical and organisational problems into{" "}
-            <span className="text-accent-strong">systems, products, and workflows</span> people can
-            rely on.
+            I help turn complex technology and applied research into{" "}
+            <span className="text-accent-strong">products people can use, trust and scale</span>.
           </h1>
           <p className="mt-7 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
             {profile.intro}
