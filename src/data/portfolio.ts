@@ -76,17 +76,24 @@ export const impact = [
 export type CaseStudy = {
   title: string;
   category: string;
+  contextLabel?: string;
+  context?: string;
   description: string;
   outcome?: string;
   detailsLabel: string;
   details: string[];
   focus?: string;
+  evidenceLabel?: string;
+  evidence?: string[];
 };
 
 export const caseStudies: CaseStudy[] = [
   {
     title: "Intelligence Pipeline",
     category: "Product Ownership · Data & AI",
+    contextLabel: "From internal research opportunity to adopted intelligence product",
+    context:
+      "Jonathan identified a gap in how corporate disclosures were converted into decision-ready intelligence. He helped define the product, align stakeholders, establish validation requirements, build the scaling roadmap and support adoption by TNO's Market Strategy team.",
     description:
       "Product ownership for a document-intelligence pipeline developed with a cross-functional data-science team. The work includes stakeholder discovery, backlog prioritisation, testable acceptance criteria and iterative validation across inconsistent document inputs.",
     outcome: "Raised document-extraction accuracy above 95%.",
@@ -98,6 +105,70 @@ export const caseStudies: CaseStudy[] = [
       "User stories and acceptance criteria",
       "Output testing and validation",
       "Customer validation with six companies",
+    ],
+    evidenceLabel: "Supporting evidence",
+    evidence: [
+      "Customer discovery involving six companies",
+      "Reports from more than 50 companies processed during development",
+      "Extraction accuracy improved from approximately 70% to above 95%",
+      "Analysis work reduced from hours to minutes",
+      "Infrastructure cost modelling and scaling roadmap",
+      "Alignment across market strategy, analysis and business-development stakeholders",
+    ],
+  },
+  {
+    title: "Air-quality research",
+    category: "Applied Research · Product Exploration",
+    contextLabel: "Making specialist scientific capability more accessible",
+    context:
+      "Jonathan helped scope the transition of an HPC-dependent air-quality model toward a more accessible smartphone-oriented tool for non-technical users within a Kenya-focused programme.",
+    description:
+      "Product exploration and accessibility work: understanding who would use the model's outputs, what level of detail they need, and how a demanding scientific capability could be reshaped for everyday devices and non-specialist users.",
+    focus:
+      "Framed as exploration and accessibility work rather than a completed production deployment.",
+    detailsLabel: "Focus areas",
+    details: [
+      "User and context discovery",
+      "Accessibility of scientific outputs",
+      "Model-to-tool scoping",
+      "Technical feasibility assessment",
+      "Multi-partner coordination",
+    ],
+  },
+  {
+    title: "MineMatch",
+    category: "Data Spaces · Emerging Technology",
+    contextLabel: "Exploring commercial and sustainability value from data-space technology",
+    context:
+      "The project examined how data spaces and digital product passports could support traceability and cross-organisational exchange in the mining sector.",
+    description:
+      "Work combining market analysis, emerging-technology assessment and platform design with hands-on prototyping, looking at where sustainability value and cross-organisational adoption could realistically meet.",
+    detailsLabel: "Dimensions",
+    details: [
+      "Market analysis",
+      "Emerging-technology assessment",
+      "Platform design",
+      "Sustainability value",
+      "Cross-organisational adoption",
+      "Hands-on prototyping",
+    ],
+  },
+  {
+    title: "Flex integrations",
+    category: "Enterprise Integration · Production Systems",
+    contextLabel: "Technology proven under real operational pressure",
+    context:
+      "Jonathan's Flex experience provides the production foundation behind his research-to-product interests. He designed and supported integrations used in active manufacturing environments where reliability, monitoring and incident response carried direct operational consequences.",
+    description:
+      "More than ten enterprise integrations across MES, QMS, WMS, ERP, workforce and identity systems—deployed and operated in live manufacturing settings, distinct from research prototypes and emerging products.",
+    outcome: "Reduced integration processing time by 70%.",
+    detailsLabel: "Scope",
+    details: [
+      "MuleSoft integration delivery",
+      "REST, SOAP, FTP/SFTP interfaces",
+      "RabbitMQ and Azure Event Hubs",
+      "Controlled releases across four environments",
+      "Monitoring and incident restoration",
     ],
   },
   {
