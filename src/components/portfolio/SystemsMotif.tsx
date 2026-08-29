@@ -29,10 +29,13 @@ export function SystemsMotif() {
       className="h-auto w-full text-accent-strong"
     >
       <g stroke="currentColor" strokeOpacity="0.28" strokeWidth="1">
-        {edges.map(([a, b], i) => (
-          <line key={i} x1={nodes[a].x} y1={nodes[a].y} x2={nodes[b].x} y2={nodes[b].y} />
-        ))}
+        {edges.map(([a, b], i) => {
+          const p = nodes[a]!;
+          const q = nodes[b]!;
+          return <line key={i} x1={p.x} y1={p.y} x2={q.x} y2={q.y} />;
+        })}
       </g>
+
       <g>
         {nodes.map((n, i) => (
           <g key={i}>
