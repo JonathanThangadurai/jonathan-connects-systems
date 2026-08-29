@@ -2,15 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/portfolio/Nav";
 import { Hero } from "@/components/portfolio/Hero";
 import { About } from "@/components/portfolio/About";
+import { ResearchToProduct } from "@/components/portfolio/ResearchToProduct";
 import { Work } from "@/components/portfolio/Work";
 import { Experience } from "@/components/portfolio/Experience";
 import { Capabilities } from "@/components/portfolio/Capabilities";
 import { Education } from "@/components/portfolio/Education";
 import { Contact } from "@/components/portfolio/Contact";
 
-const title = "Jonathan Thangadurai Selvaraj — Technical Product & Integration";
+const title = "Jonathan Thangadurai Selvaraj — Research to Product";
 const description =
-  "Amsterdam-based technical product and integration professional working across product ownership, enterprise integration, data & AI products and multidisciplinary delivery.";
+  "Amsterdam-based product-minded technologist helping complex technology and applied research become products people can use, trust and scale.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,6 +34,7 @@ function Index() {
       <main>
         <Hero />
         <About />
+        <ResearchToProduct />
         <Work />
         <Experience />
         <Capabilities />

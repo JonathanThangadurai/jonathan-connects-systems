@@ -4,7 +4,11 @@ import { Section } from "./Section";
 
 export function Work() {
   return (
-    <Section id="work" label="Selected work" title="Three problems, three different shapes.">
+    <Section
+      id="work"
+      label="Selected work"
+      title="Different shapes of the same question: can this become genuinely useful?"
+    >
       <div className="divide-y divide-rule border-y border-rule">
         {caseStudies.map((cs, i) => (
           <Reveal as="article" key={cs.title} delay={i * 60} className="py-10 md:py-14">
@@ -14,9 +18,18 @@ export function Work() {
                 <h3 className="mt-3 text-xl font-semibold tracking-tight text-foreground md:text-2xl">
                   {cs.title}
                 </h3>
+                {cs.contextLabel ? (
+                  <p className="mt-3 text-sm font-medium leading-relaxed text-accent-strong">
+                    {cs.contextLabel}
+                  </p>
+                ) : null}
               </div>
 
               <div>
+                {cs.context ? (
+                  <p className="mb-4 text-base leading-relaxed text-foreground">{cs.context}</p>
+                ) : null}
+
                 <p className="text-base leading-relaxed text-muted-foreground">{cs.description}</p>
 
                 {cs.focus ? (
@@ -27,6 +40,19 @@ export function Work() {
                   <p className="mt-5 border-l-2 border-accent-strong pl-4 text-base font-medium text-foreground">
                     {cs.outcome}
                   </p>
+                ) : null}
+
+                {cs.evidence?.length ? (
+                  <div className="mt-6 border-t border-rule pt-5">
+                    <p className="label-mono">{cs.evidenceLabel ?? "Supporting evidence"}</p>
+                    <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+                      {cs.evidence.map((e) => (
+                        <li key={e} className="text-sm leading-relaxed text-muted-foreground">
+                          {e}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ) : null}
 
                 <details className="group mt-6">
