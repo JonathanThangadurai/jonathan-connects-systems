@@ -293,6 +293,10 @@ export const capabilities = [
     title: "Delivery and improvement",
     body: "Agile and Scrum, UAT, controlled releases, monitoring, structured-log analysis, root-cause analysis, incident restoration, A3 and 5-Why analysis.",
   },
+  {
+    title: "Research, innovation and adoption",
+    body: "Research-to-product translation · Technology valorisation · Use-case discovery · Market analysis · Productisation · Business-case development · Cost modelling · Customer validation · Scaling roadmaps · Adoption planning",
+  },
 ];
 
 export const toolingNote =
