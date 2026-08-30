@@ -4,6 +4,8 @@ export const profile = {
   role: "Technical Product Owner · systems thinker",
   location: "Amsterdam, Netherlands",
   email: "jonathanthangadurai@gmail.com",
+  phone: "+31 6 3057 3697",
+  phoneHref: "tel:+31630573697",
   linkedin: "https://linkedin.com/in/jonathanthangadurai",
   github: "https://github.com/JonathanThangadurai",
   cv: "/Jonathan-Thangadurai-Selvaraj-CV-v2.pdf",

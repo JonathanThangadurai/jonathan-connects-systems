@@ -39,6 +39,7 @@ export function Contact() {
           <dl className="divide-y divide-rule border-y border-rule">
             {[
               ["Email", profile.email, `mailto:${profile.email}`],
+              ["Telephone", profile.phone, profile.phoneHref],
               ["LinkedIn", "/in/jonathanthangadurai", profile.linkedin],
               ["GitHub", "/JonathanThangadurai", profile.github],
               ["CV", "Download PDF", profile.cv],
