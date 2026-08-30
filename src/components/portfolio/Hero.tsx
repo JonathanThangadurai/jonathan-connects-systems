@@ -1,67 +1,73 @@
 import { profile } from "@/data/portfolio";
-import { SystemsMotif } from "./SystemsMotif";
 
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <div className="mx-auto grid w-full max-w-6xl gap-14 px-6 pb-20 pt-16 md:grid-cols-[1.15fr_0.85fr] md:items-center md:gap-16 md:px-10 md:pb-28 md:pt-24">
+      <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 pb-16 pt-14 md:px-10 md:pb-20 md:pt-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:gap-16">
         <div>
-          <p className="label-mono">{profile.name}</p>
-          <h1 className="mt-6 text-[2rem] font-semibold leading-[1.12] tracking-tight text-foreground sm:text-4xl md:text-5xl md:leading-[1.08]">
-            I help turn complex technology and applied research into{" "}
-            <span className="text-accent-strong">products people can use, trust and scale</span>.
+          <p className="label-mono">Product · research · systems</p>
+          <h1 className="mt-5 max-w-4xl text-[2.65rem] font-semibold leading-[1.02] tracking-[-0.045em] text-foreground sm:text-5xl md:text-[3.6rem] xl:text-[4rem]">
+            I bring people, technology and product thinking together to build{" "}
+            <span className="text-accent-strong">products that work in the real world.</span>
           </h1>
-          <p className="mt-7 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
             {profile.intro}
           </p>
 
-          <ul className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 label-mono">
-            <li>{profile.location}</li>
-            <li className="hidden sm:block" aria-hidden="true">
-              /
-            </li>
-            <li>{profile.role}</li>
-            <li className="hidden sm:block" aria-hidden="true">
-              /
-            </li>
-            <li>{profile.availability}</li>
-          </ul>
-
-          <div className="mt-10 flex flex-wrap items-center gap-3">
-            <a
-              href="#work"
-              className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-            >
-              Explore my work
-            </a>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-md border border-rule px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent"
-            >
-              Get in touch
-            </a>
+          <div className="mt-8 flex flex-wrap gap-x-7 gap-y-2">
+            <span className="label-mono">{profile.location}</span>
+            <span className="label-mono">{profile.role}</span>
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
+          <div className="mt-9 flex flex-wrap items-center gap-3">
             <a
-              href={`mailto:${profile.email}`}
-              className="underline-offset-4 transition-colors hover:text-foreground hover:underline"
+              href="#experience"
+              className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
             >
-              {profile.email}
+              Explore my experience
             </a>
             <a
-              href={profile.linkedin}
+              href={profile.cv}
               target="_blank"
               rel="noreferrer noopener"
-              className="underline-offset-4 transition-colors hover:text-foreground hover:underline"
+              className="inline-flex items-center justify-center rounded-md border border-rule px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent"
             >
-              LinkedIn
+              View my CV ↗
             </a>
           </div>
+
+          <p className="mt-7 max-w-lg text-sm leading-relaxed text-muted-foreground">
+            Currently a Product Owner at TNO, with a production-engineering foundation from Flex and
+            an international Erasmus Mundus education.
+          </p>
         </div>
 
-        <div className="hidden md:block">
-          <SystemsMotif />
+        <div className="hidden lg:block">
+          <div className="border-y border-rule">
+            <p className="py-4 label-mono">Where I work best</p>
+            <dl className="divide-y divide-rule">
+              {[
+                ["01", "Product", "Shape value, evidence and adoption"],
+                ["02", "Research", "Translate possibility into practical use"],
+                ["03", "Systems", "Connect technology, people and institutions"],
+                ["04", "Public innovation", "Work across organisations and mandates"],
+              ].map(([number, title, description]) => (
+                <div key={title} className="grid grid-cols-[2.5rem_1fr] gap-4 py-5">
+                  <span className="label-mono">{number}</span>
+                  <div>
+                    <dt className="text-sm font-semibold text-foreground">{title}</dt>
+                    <dd className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                      {description}
+                    </dd>
+                  </div>
+                </div>
+              ))}
+            </dl>
+          </div>
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
+            My role is usually at the intersections: making the whole system legible enough for a
+            team to move.
+          </p>
         </div>
       </div>
     </section>

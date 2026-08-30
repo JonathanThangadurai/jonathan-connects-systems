@@ -4,7 +4,11 @@ import { Section } from "./Section";
 
 export function Experience() {
   return (
-    <Section id="experience" label="Experience" title="Where the work has happened.">
+    <Section
+      id="experience"
+      label="Experience"
+      title="From production systems to applied research and product ownership."
+    >
       <div className="relative">
         <div
           aria-hidden="true"
@@ -29,10 +33,15 @@ export function Experience() {
                 </p>
               </header>
 
+              <p className="mt-5 max-w-4xl text-base leading-relaxed text-muted-foreground">
+                {c.summary}
+              </p>
+
               <div className="mt-6 space-y-4">
                 {c.roles.map((r) => (
                   <details
                     key={r.title}
+                    open={r === c.roles[0]}
                     className="group border-b border-rule/70 pb-4 last:border-0"
                   >
                     <summary className="flex cursor-pointer list-none flex-wrap items-baseline justify-between gap-x-6 gap-y-1 rounded-sm">

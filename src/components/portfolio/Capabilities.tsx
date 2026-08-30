@@ -1,21 +1,47 @@
-import { capabilities, toolingNote } from "@/data/portfolio";
+import { capabilities, toolkit } from "@/data/portfolio";
 import { Reveal } from "./Reveal";
 import { Section } from "./Section";
 
 export function Capabilities() {
   return (
-    <Section id="capabilities" label="Capabilities" title="What I bring to a team.">
-      <div className="grid gap-px overflow-hidden border-y border-rule bg-rule md:grid-cols-2">
-        {capabilities.map((c, i) => (
-          <Reveal key={c.title} delay={i * 50} className="bg-background px-1 py-8 md:px-8">
-            <h3 className="text-base font-semibold tracking-tight text-foreground">{c.title}</h3>
-            <p className="mt-3 max-w-md text-sm leading-relaxed text-muted-foreground">{c.body}</p>
+    <Section
+      id="capabilities"
+      label="Capabilities"
+      title="How I help complex programmes move forward."
+    >
+      <div className="grid border-l border-t border-rule md:grid-cols-3">
+        {capabilities.map((capability, index) => (
+          <Reveal
+            key={capability.title}
+            delay={index * 50}
+            className="border-b border-r border-rule p-6 md:min-h-52 md:p-8"
+          >
+            <span className="label-mono">0{index + 1}</span>
+            <h3 className="mt-8 text-lg font-semibold tracking-tight text-foreground">
+              {capability.title}
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{capability.body}</p>
           </Reveal>
         ))}
       </div>
-      <Reveal className="mt-8">
-        <p className="label-mono">Tooling note</p>
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">{toolingNote}</p>
+
+      <Reveal className="mt-10">
+        <div className="border-y border-rule py-6">
+          <div>
+            <p className="label-mono">The part recruiters search with Ctrl+F</p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              The tools, platforms and delivery methods I have worked with.
+            </p>
+          </div>
+          <dl className="mt-6 grid gap-x-10 gap-y-6 border-t border-rule pt-6 sm:grid-cols-2">
+            {toolkit.map(([name, items]) => (
+              <div key={name}>
+                <dt className="text-sm font-medium text-foreground">{name}</dt>
+                <dd className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{items}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
       </Reveal>
     </Section>
   );

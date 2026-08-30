@@ -1,207 +1,126 @@
 export const profile = {
   name: "Jonathan Thangadurai Selvaraj",
-  role: "Technical Product & Integration Professional",
+  shortName: "Jonathan",
+  role: "Product-minded technologist · systems thinker",
   location: "Amsterdam, Netherlands",
-  availability: "Open to meaningful technical and product collaborations",
   email: "jonathanthangadurai@gmail.com",
   linkedin: "https://linkedin.com/in/jonathanthangadurai",
-  phone: "+31 6 3057 3697",
+  github: "https://github.com/JonathanThangadurai",
+  cv: "/Jonathan-Thangadurai-Selvaraj-CV.pdf",
   headline:
-    "I help turn complex technology and applied research into products people can use, trust and scale.",
+    "I bring people, technology and product thinking together to build products that work in the real world.",
   intro:
-    "My background spans enterprise engineering, technical product ownership and applied research. I work in the space between what technology makes possible and what organisations can successfully adopt—connecting user needs, technical design, validation, business value and practical delivery.",
+    "I work across product ownership, applied research and engineering—understanding how technical choices, people and institutions fit together, then helping ideas move toward dependable real-world use.",
 };
 
 export const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Approach", href: "#research" },
-  { label: "Work", href: "#work" },
   { label: "Experience", href: "#experience" },
-  { label: "Capabilities", href: "#capabilities" },
+  { label: "Work", href: "#work" },
+  { label: "About", href: "#about" },
   { label: "Education", href: "#education" },
+  { label: "Capabilities", href: "#capabilities" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const aboutParagraphs = [
-  "I began my career close to the technology, designing and delivering enterprise integrations across manufacturing, workforce, identity and operational systems. That experience taught me how technical decisions affect real processes, teams and users.",
-  "My work has since expanded into product ownership, applied research, multi-stakeholder project delivery and organisation design. Today, I am most interested in work that requires both technical understanding and the ability to create alignment across different disciplines.",
-  "I enjoy situations where the problem is still unclear, several perspectives need to be reconciled, and the eventual solution must be both technically sound and genuinely useful—problems whose consequences extend well beyond the screen.",
+  "I think in systems. A technology rarely succeeds because of its architecture alone; it also depends on users, incentives, existing workflows, institutional ownership and the relationships between organisations. I enjoy making those connections visible and turning ambiguity into a direction a team can act on.",
+  "That perspective has grown from working in live manufacturing systems, applied research and international project teams. It lets me move comfortably between technical detail and the wider questions around value, governance, reliability and adoption.",
+  "I am particularly interested in public-sector and mission-driven innovation: work where research institutes, governments, companies and specialist partners need to build something together. Consortium settings—including Horizon Europe-related work—are difficult precisely because no single participant controls the whole system. That is also what makes them interesting.",
 ];
 
-export const researchToProduct = {
-  label: "Research to real-world value",
-  heading: "A promising idea is only the beginning.",
-  body: [
-    "I am especially interested in the journey between technical possibility and real-world adoption. Research can demonstrate what is possible, but turning it into a valuable product introduces a different set of questions: Who needs it? Which problem does it solve? What level of quality is required? How should it fit into existing workflows? What would make an organisation willing and able to adopt it?",
-    "I enjoy helping teams answer those questions—combining discovery, product thinking, technical understanding and stakeholder alignment to move promising concepts toward dependable use.",
-  ],
-  stages: [
-    {
-      title: "Discover the value",
-      body: "Identify users, unmet needs, operational pain points and promising applications through stakeholder and market discovery.",
-    },
-    {
-      title: "Shape the product",
-      body: "Turn broad possibilities into defined use cases, requirements, acceptance criteria, architecture decisions and a prioritised roadmap.",
-    },
-    {
-      title: "Prove what works",
-      body: "Test outputs with users, validate technical assumptions, measure quality and refine the product through evidence rather than enthusiasm alone.",
-    },
-    {
-      title: "Prepare for adoption",
-      body: "Develop the business case, cost model, governance, stakeholder ownership and implementation path needed for a solution to survive beyond its initial prototype.",
-    },
-  ],
-  quote:
-    "I am most interested in the moment when a promising technical idea has to prove that it can become genuinely useful.",
-};
-
-export const atAGlance = [
-  "Based in Amsterdam",
-  "Currently at TNO",
-  "Previously at Flex",
-  "MSc in Software Engineering & Sustainability",
-  "Experience across Europe and Asia",
-  "English, Dutch, Tamil and Hindi",
-];
-
-export const impact = [
-  { value: "10+", label: "enterprise integrations delivered" },
-  { value: "70%", label: "reduction in integration processing time" },
-  { value: "Above 95%", label: "document-extraction accuracy" },
-  { value: "6 departments", label: "aligned through workflow and governance analysis" },
-];
-
-export type CaseStudy = {
-  title: string;
-  category: string;
-  contextLabel?: string;
-  context?: string;
-  description: string;
-  outcome?: string;
-  detailsLabel: string;
-  details: string[];
-  focus?: string;
-  evidenceLabel?: string;
-  evidence?: string[];
-};
-
-export const caseStudies: CaseStudy[] = [
+export const systemsLens = [
   {
-    title: "Intelligence Pipeline",
-    category: "Product Ownership · Data & AI",
-    contextLabel: "From internal research opportunity to adopted intelligence product",
-    context:
-      "Jonathan identified a gap in how corporate disclosures were converted into decision-ready intelligence. He helped define the product, align stakeholders, establish validation requirements, build the scaling roadmap and support adoption by TNO's Market Strategy team.",
-    description:
-      "Product ownership for a document-intelligence pipeline developed with a cross-functional data-science team. The work includes stakeholder discovery, backlog prioritisation, testable acceptance criteria and iterative validation across inconsistent document inputs.",
-    outcome: "Raised document-extraction accuracy above 95%.",
-    detailsLabel: "Responsibilities",
-    details: [
-      "Product discovery",
-      "Backlog and roadmap ownership",
-      "Stakeholder alignment",
-      "User stories and acceptance criteria",
-      "Output testing and validation",
-      "Customer validation with six companies",
-    ],
-    evidenceLabel: "Supporting evidence",
-    evidence: [
-      "Customer discovery involving six companies",
-      "Reports from more than 50 companies processed during development",
-      "Extraction accuracy improved from approximately 70% to above 95%",
-      "Analysis work reduced from hours to minutes",
-      "Infrastructure cost modelling and scaling roadmap",
-      "Alignment across market strategy, analysis and business-development stakeholders",
-    ],
+    title: "Technology",
+    body: "Architecture, data, interfaces, constraints and operational reliability.",
   },
   {
-    title: "Air-quality research",
-    category: "Applied Research · Product Exploration",
-    contextLabel: "Making specialist scientific capability more accessible",
-    context:
-      "Jonathan helped scope the transition of an HPC-dependent air-quality model toward a more accessible smartphone-oriented tool for non-technical users within a Kenya-focused programme.",
-    description:
-      "Product exploration and accessibility work: understanding who would use the model's outputs, what level of detail they need, and how a demanding scientific capability could be reshaped for everyday devices and non-specialist users.",
-    focus:
-      "Framed as exploration and accessibility work rather than a completed production deployment.",
-    detailsLabel: "Focus areas",
-    details: [
-      "User and context discovery",
-      "Accessibility of scientific outputs",
-      "Model-to-tool scoping",
-      "Technical feasibility assessment",
-      "Multi-partner coordination",
+    title: "People",
+    body: "Users, teams, incentives, decision-making and the work surrounding the product.",
+  },
+  {
+    title: "Institutions",
+    body: "Ownership, governance, policy and collaboration across organisational boundaries.",
+  },
+  {
+    title: "Adoption",
+    body: "Evidence, economics and the path from a promising prototype to dependable use.",
+  },
+];
+
+export type FeaturedWork = {
+  title: string;
+  category: string;
+  strapline: string;
+  summary: string;
+  contribution: string;
+  outcome?: string;
+  evidence: string[];
+  status: string;
+};
+
+export const featuredWork: FeaturedWork[] = [
+  {
+    title: "Intelligence Pipeline",
+    category: "Product ownership · Applied AI",
+    strapline: "Taking an internal research opportunity into dependable organisational use",
+    summary:
+      "I proposed and now lead the product development of an intelligence pipeline that converts complex corporate disclosures into structured, source-traceable intelligence for TNO's Market Strategy team.",
+    contribution:
+      "I connect users and data scientists: shaping the product, prioritising the backlog, defining the extraction and validation contract, testing outputs and building the infrastructure cost model and scaling roadmap.",
+    outcome:
+      "The pipeline is now used by the team, with extraction accuracy raised from roughly 70% to above 95% through iterative validation.",
+    evidence: [
+      "Customer discovery with six companies",
+      "More than 50 company reports processed during development",
+      "Analysis reduced from hours to minutes",
+      "Adoption aligned across five internal functions",
     ],
+    status: "In use · evolving",
   },
   {
     title: "MineMatch",
-    category: "Data Spaces · Emerging Technology",
-    contextLabel: "Exploring commercial and sustainability value from data-space technology",
-    context:
-      "The project examined how data spaces and digital product passports could support traceability and cross-organisational exchange in the mining sector.",
-    description:
-      "Work combining market analysis, emerging-technology assessment and platform design with hands-on prototyping, looking at where sustainability value and cross-organisational adoption could realistically meet.",
-    detailsLabel: "Dimensions",
-    details: [
-      "Market analysis",
-      "Emerging-technology assessment",
-      "Platform design",
-      "Sustainability value",
-      "Cross-organisational adoption",
-      "Hands-on prototyping",
+    category: "Data spaces · Circular economy",
+    strapline: "Exploring how mining waste can become valuable input for another organisation",
+    summary:
+      "For a Solita industry capstone, I led a five-person international team developing a data-space concept for matching mining-sector material and waste streams with potential users.",
+    contribution:
+      "I combined project leadership and stakeholder negotiation with hands-on platform work, helping design the APIs, traceable data-sharing flows and interfaces needed to exchange information across providers.",
+    outcome:
+      "The project tested both the technical platform and the commercial, sustainability and trust conditions required for cross-organisational adoption.",
+    evidence: [
+      "Five-person international team",
+      "Node.js, TypeScript and PostgreSQL prototype",
+      "Multiple mining-sector data providers",
+      "Aligned with EU sustainability goals",
     ],
+    status: "Industry capstone",
   },
-  {
-    title: "Flex integrations",
-    category: "Enterprise Integration · Production Systems",
-    contextLabel: "Technology proven under real operational pressure",
-    context:
-      "Jonathan's Flex experience provides the production foundation behind his research-to-product interests. He designed and supported integrations used in active manufacturing environments where reliability, monitoring and incident response carried direct operational consequences.",
-    description:
-      "More than ten enterprise integrations across MES, QMS, WMS, ERP, workforce and identity systems—deployed and operated in live manufacturing settings, distinct from research prototypes and emerging products.",
-    outcome: "Reduced integration processing time by 70%.",
-    detailsLabel: "Scope",
-    details: [
-      "MuleSoft integration delivery",
-      "REST, SOAP, FTP/SFTP interfaces",
-      "RabbitMQ and Azure Event Hubs",
-      "Controlled releases across four environments",
-      "Monitoring and incident restoration",
-    ],
-  },
+];
+
+export const selectedProjects = [
   {
     title: "VaxiChain",
-    category: "IoT · Connected Systems",
-    description:
-      "An IoT cold-chain monitoring and alerting prototype designed to process distributed sensor, location and routing data.",
-    focus:
-      "Exploring how connected systems can improve visibility and response across temperature-sensitive supply chains.",
-    detailsLabel: "Technologies",
-    details: [
-      "MQTT",
-      "OpenHAB",
-      "IoT sensors",
-      "Location and routing data",
-      "Event-driven monitoring",
-    ],
+    category: "IoT · Cold-chain logistics",
+    role: "Developer",
+    summary:
+      "A proof of concept for safer vaccine transport, combining simulated sensor data, MQTT and OpenHAB to monitor cold-chain conditions and trigger alerts when temperatures moved outside the safe range.",
+    detail: "Kotlin · Mosquitto MQTT · Telegraf · InfluxDB · Grafana · OpenHAB · Docker",
   },
   {
-    title: "Harmonize & Optimize: The Geo-Odyssey",
-    category: "Organisation Design · Process Improvement",
-    description:
-      "A people-centred workflow and governance initiative for the Geological Survey of the Netherlands. The project examined recurring handover, ownership and delivery problems across six departments.",
-    outcome:
-      "Created a repeatable framework for clearer cross-team responsibilities and more consistent collaboration.",
-    detailsLabel: "Approach",
-    details: [
-      "Stakeholder interviews and facilitation",
-      "A3 analysis",
-      "5-Why root-cause analysis",
-      "Workflow mapping",
-      "Ownership and governance design",
-    ],
+    title: "Dart & Charge",
+    category: "IoT · Public infrastructure",
+    role: "Project manager",
+    summary:
+      "An RFID and IoT-based toll-collection prototype designed to reduce waiting time and congestion at toll plazas. I led the project from concept through a working national-level demonstration.",
+    detail: "Winner, Smart India Hackathon · #1 of 150+ teams · prototype-development grant",
+  },
+  {
+    title: "Beehive",
+    category: "Renewable energy · CINI Challenge, Italy",
+    role: "Developer",
+    summary:
+      "A community renewable-energy concept exploring how local production and consumption data could support more coordinated energy distribution, developed as a proof of concept for the CINI Challenge.",
+    detail: "React · Kotlin · Python · international challenge project",
   },
 ];
 
@@ -211,6 +130,7 @@ export type Company = {
   meta: string;
   location: string;
   period: string;
+  summary: string;
   roles: Role[];
 };
 
@@ -220,16 +140,17 @@ export const experience: Company[] = [
     meta: "Netherlands Organisation for Applied Scientific Research",
     location: "The Hague, Netherlands",
     period: "September 2024–present",
+    summary:
+      "I work where applied research meets product delivery—connecting specialist teams with the users, partners and institutional conditions needed for research to become useful in practice. My TNO work has also placed me in public-sector and multi-partner consortium environments, including Horizon Europe-related collaboration.",
     roles: [
       {
         title: "Product Owner — Intelligence Pipeline",
         period: "January 2026–present",
         points: [
-          "Own and prioritise the backlog for a cross-functional data-science team.",
-          "Translate stakeholder needs into user stories and testable acceptance criteria.",
-          "Lead discovery and alignment sessions.",
-          "Improved extraction accuracy to above 95% through iterative validation.",
-          "Validated customer needs through a roundtable with six companies.",
+          "Proposed and lead an applied-AI product that converts corporate disclosures into structured, source-traceable intelligence.",
+          "Own the backlog and translate stakeholder needs into testable requirements for a cross-functional data-science team.",
+          "Designed the extraction schema, validation contract, provenance model and product scaling roadmap.",
+          "Raised extraction accuracy from roughly 70% to above 95% through iterative testing and validation.",
         ],
       },
       {
@@ -237,7 +158,7 @@ export const experience: Company[] = [
         period: "May 2025–December 2025",
         points: [
           "Coordinated five applied-research projects involving customers, government organisations, industry partners and internal specialists.",
-          "Managed changing priorities, dependencies and delivery expectations.",
+          "Managed changing priorities, cross-project dependencies and delivery expectations across a multi-partner environment.",
           "Negotiated a reduced scope that preserved customer value when a consortium partner sought to withdraw.",
         ],
       },
@@ -245,9 +166,9 @@ export const experience: Company[] = [
         title: "Organisation Strategy Consultant — Geological Survey of the Netherlands",
         period: "September 2024–April 2025",
         points: [
-          "Facilitated root-cause analysis across six departments.",
-          "Identified recurring handover, ownership and delivery bottlenecks.",
-          "Designed a workflow and governance framework that clarified cross-team responsibilities.",
+          "Facilitated root-cause analysis across six departments to understand recurring handover and delivery problems.",
+          "Mapped ownership and workflow bottlenecks across organisational boundaries.",
+          "Designed a repeatable governance framework that clarified cross-team responsibilities and collaboration.",
         ],
       },
     ],
@@ -257,19 +178,17 @@ export const experience: Company[] = [
     meta: "Integration Solutions Consultant",
     location: "Chennai, India",
     period: "October 2020–July 2022",
+    summary:
+      "This is where I learned what dependable technology means under real operational pressure: production data, factory systems and business processes that cannot simply stop when an interface fails.",
     roles: [
       {
         title: "Integration Solutions Consultant",
         period: "October 2020–July 2022",
         points: [
-          "Delivered more than 10 MuleSoft integrations across MES, QMS, WMS, ERP, workforce and IAM systems.",
-          "Translated operational requirements into mappings, interface specifications and clear system boundaries.",
-          "Designed and supported REST, SOAP, FTP, SFTP, RabbitMQ and Azure Event Hubs integrations.",
-          "Worked with OAuth 2.0, JWT, SSO, Okta and Azure Active Directory.",
-          "Guided releases through four controlled environments using GitLab and Jenkins.",
-          "Supported monitoring, root-cause investigation and production incident restoration.",
-          "Reduced integration processing time by 70%.",
-          "Resolved a batch-reliability issue by redesigning processing around dependable cloud-ingestion timestamps.",
+          "Built and supported more than 10 MuleSoft integrations across factories in India and Southeast Asia.",
+          "Connected MES, QMS, WMS, ERP, workforce and identity systems through API, batch and event-driven patterns.",
+          "Translated operational requirements into data mappings, interface specifications and clear system boundaries.",
+          "Reduced integration processing time by 70% and strengthened batch reliability through a structural redesign.",
         ],
       },
     ],
@@ -278,48 +197,52 @@ export const experience: Company[] = [
 
 export const capabilities = [
   {
-    title: "Product and discovery",
-    body: "Product ownership, stakeholder discovery, backlog prioritisation, roadmaps, user stories, acceptance criteria, customer validation and cross-functional facilitation.",
+    title: "Product and valorisation",
+    body: "Discovery, product ownership, use-case framing, roadmaps, backlog prioritisation, validation, business-case thinking and the transition from research output to adopted product.",
   },
   {
     title: "Systems and integration",
-    body: "MuleSoft, REST and SOAP APIs, batch processing, event-driven integration, RabbitMQ, Azure Event Hubs, FTP/SFTP, data mapping and interface design.",
+    body: "Enterprise integration, API and event-driven design, data flows, applied AI, cloud and identity, technical troubleshooting, controlled releases and production reliability.",
   },
   {
-    title: "Cloud, identity and security",
-    body: "Microsoft Azure, Azure Functions, Azure SQL, Azure Active Directory, Okta, OAuth 2.0, JWT, SSO, workforce data and identity flows.",
-  },
-  {
-    title: "Delivery and improvement",
-    body: "Agile and Scrum, UAT, controlled releases, monitoring, structured-log analysis, root-cause analysis, incident restoration, A3 and 5-Why analysis.",
-  },
-  {
-    title: "Research, innovation and adoption",
-    body: "Research-to-product translation · Technology valorisation · Use-case discovery · Market analysis · Productisation · Business-case development · Cost modelling · Customer validation · Scaling roadmaps · Adoption planning",
+    title: "Public innovation and consortia",
+    body: "Collaboration across research, government and industry; multi-partner delivery; competing incentives; public value; governance and adoption across organisational boundaries.",
   },
 ];
 
-export const toolingNote =
-  "Extensive GitHub experience for source control and collaboration, separate from GitLab and Jenkins release workflows.";
+export const toolkit = [
+  ["Integration", "MuleSoft · REST · SOAP · batch · events · RabbitMQ · Azure Event Hubs · MQTT"],
+  ["Cloud & data", "Azure · Python · SQL · PostgreSQL · InfluxDB · Grafana · Docker · Pydantic"],
+  [
+    "Product",
+    "Discovery · roadmaps · backlogs · user stories · acceptance criteria · UAT · validation",
+  ],
+  [
+    "Collaboration",
+    "Consortium delivery · stakeholder facilitation · market exploration · cost modelling",
+  ],
+] as const;
 
 export const education = [
   {
     title: "Erasmus Mundus Joint Master's Degree — SE4GD",
     subtitle: "MSc Software Engineering & Sustainability",
     period: "2022–2024",
+    note: "Selected for a fully funded Erasmus Mundus scholarship covering tuition and living support for an international programme focused on software engineering, sustainability and the European Green Deal.",
     items: ["Vrije Universiteit Amsterdam", "LUT University", "University of L'Aquila"],
   },
   {
     title: "Anna University",
-    subtitle: "Bachelor of Technology in Information Technology",
+    subtitle: "Bachelor of Technology in Information Technology · graduated Cum Laude, top 10%",
     period: "2016–2020",
+    note: "My foundation in software engineering, systems development and applied technology.",
     items: [],
   },
 ];
 
 export const languages = [
   { name: "English", level: "C2" },
-  { name: "Dutch", level: "A2, actively studying toward B1" },
+  { name: "Dutch", level: "A2 · studying toward B1" },
   { name: "Tamil", level: "C2" },
   { name: "Hindi", level: "A2" },
 ];

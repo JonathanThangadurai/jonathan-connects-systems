@@ -15,9 +15,13 @@ export function Section({
   className?: string;
 }) {
   return (
-    <section id={id} className={`border-t border-rule ${className}`} aria-labelledby={`${id}-title`}>
-      <div className="mx-auto w-full max-w-6xl px-6 py-20 md:px-10 md:py-28">
-        <Reveal className="mb-12 md:mb-16">
+    <section
+      id={id}
+      className={`border-t border-rule ${className}`}
+      aria-labelledby={`${id}-title`}
+    >
+      <div className="mx-auto w-full max-w-6xl px-6 py-16 md:px-10 md:py-20">
+        <Reveal className="mb-10 md:mb-12">
           <p className="label-mono">{label}</p>
           <h2
             id={`${id}-title`}

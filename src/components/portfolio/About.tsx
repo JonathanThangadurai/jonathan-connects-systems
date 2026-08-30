@@ -1,46 +1,42 @@
-import { aboutParagraphs, atAGlance, impact } from "@/data/portfolio";
+import { aboutParagraphs, systemsLens } from "@/data/portfolio";
 import { Reveal } from "./Reveal";
 import { Section } from "./Section";
 
 export function About() {
   return (
-    <Section id="about" label="About" title="Between technical reality and stakeholder needs.">
-      <div className="grid gap-12 md:grid-cols-[1.2fr_0.8fr] md:gap-16">
-        <Reveal className="space-y-6">
-          {aboutParagraphs.map((p) => (
-            <p key={p.slice(0, 24)} className="text-base leading-relaxed text-muted-foreground md:text-lg">
-              {p}
+    <Section id="about" label="About & approach" title="Why technology is never the whole story.">
+      <div className="grid gap-12 md:grid-cols-[1.2fr_0.8fr] md:gap-20">
+        <Reveal className="space-y-5">
+          {aboutParagraphs.map((paragraph) => (
+            <p
+              key={paragraph.slice(0, 28)}
+              className="max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg"
+            >
+              {paragraph}
             </p>
           ))}
+          <blockquote className="mt-8 border-l-2 border-accent-strong pl-5 text-xl font-medium leading-snug tracking-tight text-foreground md:text-2xl">
+            “The product is only one part of the system that makes it useful.”
+          </blockquote>
         </Reveal>
 
         <Reveal delay={80}>
-          <div className="border-l border-rule pl-6 md:pl-8">
-            <p className="label-mono">At a glance</p>
-            <ul className="mt-5 space-y-3">
-              {atAGlance.map((item) => (
-                <li key={item} className="text-sm leading-relaxed text-foreground">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <p className="label-mono">How I approach complex problems</p>
+          <dl className="mt-4 divide-y divide-rule border-y border-rule">
+            {systemsLens.map((item, index) => (
+              <div key={item.title} className="grid grid-cols-[2rem_1fr] gap-3 py-4">
+                <span className="label-mono">0{index + 1}</span>
+                <div>
+                  <dt className="text-sm font-semibold text-foreground">{item.title}</dt>
+                  <dd className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                    {item.body}
+                  </dd>
+                </div>
+              </div>
+            ))}
+          </dl>
         </Reveal>
       </div>
-
-      <Reveal className="mt-16 md:mt-20">
-        <p className="label-mono">Selected impact</p>
-        <dl className="mt-6 grid grid-cols-1 gap-px overflow-hidden border-y border-rule bg-rule sm:grid-cols-2 lg:grid-cols-4">
-          {impact.map((s) => (
-            <div key={s.value + s.label} className="bg-background px-1 py-6 sm:px-5">
-              <dt className="text-2xl font-semibold tracking-tight text-accent-strong md:text-3xl">
-                {s.value}
-              </dt>
-              <dd className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.label}</dd>
-            </div>
-          ))}
-        </dl>
-      </Reveal>
     </Section>
   );
 }

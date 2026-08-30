@@ -2,16 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/portfolio/Nav";
 import { Hero } from "@/components/portfolio/Hero";
 import { About } from "@/components/portfolio/About";
-import { ResearchToProduct } from "@/components/portfolio/ResearchToProduct";
 import { Work } from "@/components/portfolio/Work";
 import { Experience } from "@/components/portfolio/Experience";
 import { Capabilities } from "@/components/portfolio/Capabilities";
 import { Education } from "@/components/portfolio/Education";
 import { Contact } from "@/components/portfolio/Contact";
 
-const title = "Jonathan Thangadurai Selvaraj — Research to Product";
+const title = "Jonathan Thangadurai Selvaraj — Product, Research & Systems";
 const description =
-  "Amsterdam-based product-minded technologist helping complex technology and applied research become products people can use, trust and scale.";
+  "Amsterdam-based product-minded technologist and systems thinker connecting applied research, public innovation and engineering with dependable real-world use.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -21,8 +20,14 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "profile" },
+      { property: "og:url", content: "https://jonathan.guru/" },
+      { property: "og:image", content: "https://jonathan.guru/og.png" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: "https://jonathan.guru/og.png" },
     ],
+    links: [{ rel: "canonical", href: "https://jonathan.guru/" }],
   }),
   component: Index,
 });
@@ -33,12 +38,11 @@ function Index() {
       <Nav />
       <main>
         <Hero />
-        <About />
-        <ResearchToProduct />
-        <Work />
         <Experience />
-        <Capabilities />
+        <Work />
+        <About />
         <Education />
+        <Capabilities />
         <Contact />
       </main>
     </div>
