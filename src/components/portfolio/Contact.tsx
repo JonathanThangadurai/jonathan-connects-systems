@@ -15,8 +15,8 @@ export function Contact() {
               Let’s talk about what you’re trying to make work.
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              I am always interested in thoughtful conversations about research-to-product work,
-              public innovation, technical products and complex systems.
+              I am always interested in thoughtful conversations about product creation, applied AI,
+              research-to-product work, public innovation and complex systems.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a

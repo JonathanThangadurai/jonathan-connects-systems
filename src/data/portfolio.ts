@@ -1,16 +1,16 @@
 export const profile = {
   name: "Jonathan Thangadurai Selvaraj",
   shortName: "Jonathan",
-  role: "Product-minded technologist · systems thinker",
+  role: "Technical Product Owner · systems thinker",
   location: "Amsterdam, Netherlands",
   email: "jonathanthangadurai@gmail.com",
   linkedin: "https://linkedin.com/in/jonathanthangadurai",
   github: "https://github.com/JonathanThangadurai",
-  cv: "/Jonathan-Thangadurai-Selvaraj-CV.pdf",
+  cv: "/Jonathan-Thangadurai-Selvaraj-CV-v2.pdf",
   headline:
-    "I bring people, technology and product thinking together to build products that work in the real world.",
+    "I work on turning promising technology into products through discovery, technical development and stakeholder alignment.",
   intro:
-    "I work across product ownership, applied research and engineering—understanding how technical choices, people and institutions fit together, then helping ideas move toward dependable real-world use.",
+    "My work sits between product ownership, engineering and applied research. I frame opportunities, build technical foundations such as interpretation and validation layers, and keep users, specialists and decision-makers moving towards a product with real demand.",
 };
 
 export const navItems = [
@@ -24,7 +24,7 @@ export const navItems = [
 
 export const aboutParagraphs = [
   "I think in systems. A technology rarely succeeds because of its architecture alone; it also depends on users, incentives, existing workflows, institutional ownership and the relationships between organisations. I enjoy making those connections visible and turning ambiguity into a direction a team can act on.",
-  "That perspective has grown from working in live manufacturing systems, applied research and international project teams. It lets me move comfortably between technical detail and the wider questions around value, governance, reliability and adoption.",
+  "I am especially interested in the earliest product stage: when a useful technical capability exists, but the product, evidence and ownership around it do not. I like turning that ambiguity into a concept, a working foundation, a validated use case and enough organisational demand to keep it moving.",
   "I am particularly interested in public-sector and mission-driven innovation: work where research institutes, governments, companies and specialist partners need to build something together. Consortium settings—including Horizon Europe-related work—are difficult precisely because no single participant controls the whole system. That is also what makes them interesting.",
 ];
 
@@ -43,7 +43,7 @@ export const systemsLens = [
   },
   {
     title: "Adoption",
-    body: "Evidence, economics and the path from a promising prototype to dependable use.",
+    body: "Demand, sponsorship, evidence and the path from a promising prototype to dependable use.",
   },
 ];
 
@@ -60,22 +60,22 @@ export type FeaturedWork = {
 
 export const featuredWork: FeaturedWork[] = [
   {
-    title: "Intelligence Pipeline",
-    category: "Product ownership · Applied AI",
-    strapline: "Taking an internal research opportunity into dependable organisational use",
+    title: "Market Intelligence Platform",
+    category: "Product creation · Applied AI",
+    strapline: "From product idea and interpretation layer to organisational adoption",
     summary:
-      "I proposed and now lead the product development of an intelligence pipeline that converts complex corporate disclosures into structured, source-traceable intelligence for TNO's Market Strategy team.",
+      "I identified an opportunity to improve how TNO discovers market developments and portfolio whitespace, then developed the initial concept and connected it to the organisation's wider GenAI ambitions.",
     contribution:
-      "I connect users and data scientists: shaping the product, prioritising the backlog, defining the extraction and validation contract, testing outputs and building the infrastructure cost model and scaling roadmap.",
+      "I led product discovery with users and six external companies, and designed the interpretation layer—schemas, prompts, classification logic, validation rules and supporting architecture—that turns corporate disclosures into structured, traceable market intelligence.",
     outcome:
-      "The pipeline is now used by the team, with extraction accuracy raised from roughly 70% to above 95% through iterative validation.",
+      "The work moved from an initial opportunity into an adopted product for Market Strategy and a reusable methodology attracting interest from TNO's GenAI Guild and Business Development community.",
     evidence: [
-      "Customer discovery with six companies",
-      "More than 50 company reports processed during development",
-      "Analysis reduced from hours to minutes",
-      "Adoption aligned across five internal functions",
+      "Product discovery with six companies",
+      "Interpretation layer built around schemas, prompts and validation",
+      "Continuity across users, analysts and data scientists",
+      "Internal demand from GenAI Guild and Business Development",
     ],
-    status: "In use · evolving",
+    status: "In use · expanding",
   },
   {
     title: "MineMatch",
@@ -141,16 +141,16 @@ export const experience: Company[] = [
     location: "The Hague, Netherlands",
     period: "September 2024–present",
     summary:
-      "I work where applied research meets product delivery—connecting specialist teams with the users, partners and institutional conditions needed for research to become useful in practice. My TNO work has also placed me in public-sector and multi-partner consortium environments, including Horizon Europe-related collaboration.",
+      "I work where applied research meets product creation and delivery—turning emerging technical capabilities into products with a clear user, validated use case and route to adoption. My TNO work has also placed me in public-sector and multi-partner consortium environments, including Horizon Europe-related collaboration.",
     roles: [
       {
-        title: "Product Owner — Intelligence Pipeline",
+        title: "Product Owner — Market Intelligence Platform",
         period: "January 2026–present",
         points: [
-          "Proposed and lead an applied-AI product that converts corporate disclosures into structured, source-traceable intelligence.",
-          "Own the backlog and translate stakeholder needs into testable requirements for a cross-functional data-science team.",
-          "Designed the extraction schema, validation contract, provenance model and product scaling roadmap.",
-          "Raised extraction accuracy from roughly 70% to above 95% through iterative testing and validation.",
+          "Identified the opportunity, developed the initial product concept and methodology, and connected it to TNO's wider GenAI ambitions.",
+          "Led discovery with analysts, Market Strategy, Business Development and six external companies to validate decision needs and use cases.",
+          "Designed and developed the interpretation layer: schemas, prompts, classification logic, validation rules and supporting architecture.",
+          "Maintained continuity across users, data scientists and business stakeholders while building sponsorship with the GenAI Guild and Business Development for reuse in other data-focused products.",
         ],
       },
       {
@@ -197,29 +197,32 @@ export const experience: Company[] = [
 
 export const capabilities = [
   {
-    title: "Product and valorisation",
-    body: "Discovery, product ownership, use-case framing, roadmaps, backlog prioritisation, validation, business-case thinking and the transition from research output to adopted product.",
+    title: "Product creation and discovery",
+    body: "Ideation, problem framing, customer discovery, use-case validation, roadmaps, backlogs and the transition from technical opportunity to adopted product.",
   },
   {
-    title: "Systems and integration",
-    body: "Enterprise integration, API and event-driven design, data flows, applied AI, cloud and identity, technical troubleshooting, controlled releases and production reliability.",
+    title: "Technical product building",
+    body: "Architecture, interpretation and validation logic, applied AI, enterprise integration, data flows, hands-on prototyping and production reliability.",
   },
   {
-    title: "Public innovation and consortia",
-    body: "Collaboration across research, government and industry; multi-partner delivery; competing incentives; public value; governance and adoption across organisational boundaries.",
+    title: "Adoption and multi-stakeholder innovation",
+    body: "Building sponsorship and demand across business, research, government and industry; navigating governance, competing incentives and collaboration across organisational boundaries.",
   },
 ];
 
 export const toolkit = [
   ["Integration", "MuleSoft · REST · SOAP · batch · events · RabbitMQ · Azure Event Hubs · MQTT"],
-  ["Cloud & data", "Azure · Python · SQL · PostgreSQL · InfluxDB · Grafana · Docker · Pydantic"],
+  [
+    "Cloud & data",
+    "Azure · Python · SQL · PostgreSQL · schemas · prompts · classification · Pydantic · Docker",
+  ],
   [
     "Product",
-    "Discovery · roadmaps · backlogs · user stories · acceptance criteria · UAT · validation",
+    "Ideation · discovery · use-case validation · roadmaps · backlogs · user stories · acceptance criteria",
   ],
   [
     "Collaboration",
-    "Consortium delivery · stakeholder facilitation · market exploration · cost modelling",
+    "Internal sponsorship · GenAI alignment · consortium delivery · stakeholder facilitation · cost modelling",
   ],
 ] as const;
 

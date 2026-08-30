@@ -8,9 +8,9 @@ import { Capabilities } from "@/components/portfolio/Capabilities";
 import { Education } from "@/components/portfolio/Education";
 import { Contact } from "@/components/portfolio/Contact";
 
-const title = "Jonathan Thangadurai Selvaraj — Product, Research & Systems";
+const title = "Jonathan Thangadurai Selvaraj — Technical Product Owner";
 const description =
-  "Amsterdam-based product-minded technologist and systems thinker connecting applied research, public innovation and engineering with dependable real-world use.";
+  "Amsterdam-based Technical Product Owner creating products from emerging technology through discovery, technical development, systems thinking and stakeholder alignment.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

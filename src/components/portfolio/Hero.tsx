@@ -5,10 +5,12 @@ export function Hero() {
     <section id="top" className="relative overflow-hidden">
       <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 pb-16 pt-14 md:px-10 md:pb-20 md:pt-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:gap-16">
         <div>
-          <p className="label-mono">Product · research · systems</p>
+          <p className="label-mono">Product creation · applied AI · systems</p>
           <h1 className="mt-5 max-w-4xl text-[2.65rem] font-semibold leading-[1.02] tracking-[-0.045em] text-foreground sm:text-5xl md:text-[3.6rem] xl:text-[4rem]">
-            I bring people, technology and product thinking together to build{" "}
-            <span className="text-accent-strong">products that work in the real world.</span>
+            I work on turning promising technology into products through{" "}
+            <span className="text-accent-strong">
+              discovery, technical development and stakeholder alignment.
+            </span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
             {profile.intro}
@@ -37,8 +39,8 @@ export function Hero() {
           </div>
 
           <p className="mt-7 max-w-lg text-sm leading-relaxed text-muted-foreground">
-            Currently a Product Owner at TNO, with a production-engineering foundation from Flex and
-            an international Erasmus Mundus education.
+            Currently creating a market-intelligence product at TNO, with a production-engineering
+            foundation from Flex and an international Erasmus Mundus education.
           </p>
         </div>
 
@@ -47,10 +49,10 @@ export function Hero() {
             <p className="py-4 label-mono">Where I work best</p>
             <dl className="divide-y divide-rule">
               {[
-                ["01", "Product", "Shape value, evidence and adoption"],
-                ["02", "Research", "Translate possibility into practical use"],
-                ["03", "Systems", "Connect technology, people and institutions"],
-                ["04", "Public innovation", "Work across organisations and mandates"],
+                ["01", "Product", "Shape the idea, value and product direction"],
+                ["02", "Research", "Translate possibility into a validated use case"],
+                ["03", "Systems", "Build the technical foundations and interfaces"],
+                ["04", "Public innovation", "Create alignment across organisations and mandates"],
               ].map(([number, title, description]) => (
                 <div key={title} className="grid grid-cols-[2.5rem_1fr] gap-4 py-5">
                   <span className="label-mono">{number}</span>
@@ -65,8 +67,8 @@ export function Hero() {
             </dl>
           </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            My role is usually at the intersections: making the whole system legible enough for a
-            team to move.
+            My role is usually at the intersections: making the whole product system clear enough
+            for a team to keep moving.
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@ export function Experience() {
     <Section
       id="experience"
       label="Experience"
-      title="From production systems to applied research and product ownership."
+      title="From production systems to product creation in applied research."
     >
       <div className="relative">
         <div

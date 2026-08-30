@@ -7,7 +7,7 @@ export function Capabilities() {
     <Section
       id="capabilities"
       label="Capabilities"
-      title="How I help complex programmes move forward."
+      title="How I work across product, technology and adoption."
     >
       <div className="grid border-l border-t border-rule md:grid-cols-3">
         {capabilities.map((capability, index) => (
