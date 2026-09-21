@@ -4,11 +4,7 @@ import { Section } from "./Section";
 
 export function Experience() {
   return (
-    <Section
-      id="experience"
-      label="Experience"
-      title="From production systems to product creation in applied research."
-    >
+    <Section id="experience" label="Experience" title="Professional experience">
       <div className="relative">
         <div
           aria-hidden="true"
@@ -23,7 +19,7 @@ export function Experience() {
               />
               <header className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-rule pb-4">
                 <div>
-                  <h3 className="text-xl font-semibold tracking-tight text-foreground">
+                  <h3 className="font-display text-3xl font-medium tracking-tight text-foreground">
                     {c.company}
                   </h3>
                   <p className="mt-1 text-sm text-muted-foreground">{c.meta}</p>

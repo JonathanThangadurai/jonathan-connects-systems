@@ -1,14 +1,10 @@
-import { education, languages } from "@/data/portfolio";
+import { education, languages, recognition } from "@/data/portfolio";
 import { Reveal } from "./Reveal";
 import { Section } from "./Section";
 
 export function Education() {
   return (
-    <Section
-      id="education"
-      label="Education"
-      title="Learning across Europe: software, sustainability and systems."
-    >
+    <Section id="education" label="Education" title="Education and recognition">
       <div className="grid gap-12 md:grid-cols-[1.2fr_0.8fr] md:gap-16">
         <div className="space-y-10">
           {education.map((e, i) => (
@@ -23,7 +19,7 @@ export function Education() {
                 </p>
               ) : null}
               <p className="label-mono">{e.period}</p>
-              <h3 className="mt-2 text-lg font-semibold tracking-tight text-foreground">
+              <h3 className="mt-2 font-display text-2xl font-medium tracking-tight text-foreground">
                 {e.title}
               </h3>
               <p className="mt-1 text-sm text-muted-foreground">{e.subtitle}</p>
@@ -43,16 +39,32 @@ export function Education() {
           ))}
         </div>
 
-        <Reveal delay={80}>
-          <p className="label-mono">Languages</p>
-          <dl className="mt-5 divide-y divide-rule border-y border-rule">
-            {languages.map((l) => (
-              <div key={l.name} className="flex items-baseline justify-between gap-4 py-3">
-                <dt className="text-sm font-medium text-foreground">{l.name}</dt>
-                <dd className="text-right text-sm text-muted-foreground">{l.level}</dd>
-              </div>
-            ))}
-          </dl>
+        <Reveal delay={80} className="space-y-10">
+          <div>
+            <p className="label-mono">Languages</p>
+            <dl className="mt-5 divide-y divide-rule border-y border-rule">
+              {languages.map((l) => (
+                <div key={l.name} className="flex items-baseline justify-between gap-4 py-3">
+                  <dt className="text-sm font-medium text-foreground">{l.name}</dt>
+                  <dd className="text-right text-sm text-muted-foreground">{l.level}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <div>
+            <p className="label-mono">Selected recognition</p>
+            <dl className="mt-5 divide-y divide-rule border-y border-rule">
+              {recognition.map((item) => (
+                <div key={item.title} className="py-4">
+                  <dt className="text-sm font-medium text-foreground">{item.title}</dt>
+                  <dd className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    {item.detail}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </Reveal>
       </div>
     </Section>

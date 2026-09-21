@@ -1,7 +1,7 @@
 export const profile = {
   name: "Jonathan Thangadurai Selvaraj",
   shortName: "Jonathan",
-  role: "Technical Product Owner · systems thinker",
+  role: "Technical Product Owner · AI, operations & systems",
   location: "Amsterdam, Netherlands",
   email: "jonathanthangadurai@gmail.com",
   phone: "+31 6 3057 3697",
@@ -9,10 +9,9 @@ export const profile = {
   linkedin: "https://linkedin.com/in/jonathanthangadurai",
   github: "https://github.com/JonathanThangadurai",
   cv: "/Jonathan-Thangadurai-Selvaraj-CV-v2.pdf",
-  headline:
-    "I work on turning promising technology into products through discovery, technical development and stakeholder alignment.",
+  headline: "Technical Product Owner",
   intro:
-    "My work sits between product ownership, engineering and applied research. I frame opportunities, build technical foundations such as interpretation and validation layers, and keep users, specialists and decision-makers moving towards a product with real demand.",
+    "My experience covers AI product ownership, applied-research programmes, organisation strategy and enterprise integration. I work across discovery, technical delivery, stakeholder coordination, validation and production support.",
 };
 
 export const navItems = [
@@ -20,14 +19,13 @@ export const navItems = [
   { label: "Work", href: "#work" },
   { label: "About", href: "#about" },
   { label: "Education", href: "#education" },
-  { label: "Capabilities", href: "#capabilities" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const aboutParagraphs = [
-  "I think in systems. A technology rarely succeeds because of its architecture alone; it also depends on users, incentives, existing workflows, institutional ownership and the relationships between organisations. I enjoy making those connections visible and turning ambiguity into a direction a team can act on.",
-  "I am especially interested in the earliest product stage: when a useful technical capability exists, but the product, evidence and ownership around it do not. I like turning that ambiguity into a concept, a working foundation, a validated use case and enough organisational demand to keep it moving.",
-  "I am particularly interested in public-sector and mission-driven innovation: work where research institutes, governments, companies and specialist partners need to build something together. Consortium settings—including Horizon Europe-related work—are difficult precisely because no single participant controls the whole system. That is also what makes them interesting.",
+  "I started in enterprise integration at Flex, designing and supporting data flows across manufacturing, quality, warehouse, workforce and business systems.",
+  "At TNO, my work expanded into organisation strategy, multi-partner project delivery, AI programme evaluation and AI product ownership. My responsibilities included discovery, roadmaps, backlogs, validation, governance, programme analysis and product handover.",
+  "I often work across teams with different requirements. I connect user needs, technical constraints, operational processes and ownership so that decisions and delivery responsibilities are clear.",
 ];
 
 export const systemsLens = [
@@ -63,21 +61,21 @@ export type FeaturedWork = {
 export const featuredWork: FeaturedWork[] = [
   {
     title: "Market Intelligence Platform",
-    category: "Product creation · Applied AI",
-    strapline: "From product idea and interpretation layer to organisational adoption",
+    category: "AI product ownership · Market intelligence",
+    strapline: "From fragmented information and experiments to a governed beta product",
     summary:
-      "I identified an opportunity to improve how TNO discovers market developments and portfolio whitespace, then developed the initial concept and connected it to the organisation's wider GenAI ambitions.",
+      "I identified fragmented market and customer intelligence across spreadsheets and SharePoint, then defined a shared platform for company comparison, market-pull analysis and portfolio-whitespace discovery.",
     contribution:
-      "I led product discovery with users and six external companies, and designed the interpretation layer—schemas, prompts, classification logic, validation rules and supporting architecture—that turns corporate disclosures into structured, traceable market intelligence.",
+      "I led 20+ workshops across 10 stakeholder groups, owned the roadmap and backlog for a five-person AI team, and designed the human-in-the-loop evidence layer: schemas, prompts, classification logic, source traceability, ground-truth testing and validation rules.",
     outcome:
-      "The work moved from an initial opportunity into an adopted product for Market Strategy and a reusable methodology attracting interest from TNO's GenAI Guild and Business Development community.",
+      "I narrowed 15 experiments to seven beta capabilities and three priority investments, moved the product into beta with approximately 25 participants, and handed the roadmap and feedback cycle to Market Strategy.",
     evidence: [
-      "Product discovery with six companies",
-      "Interpretation layer built around schemas, prompts and validation",
-      "Continuity across users, analysts and data scientists",
-      "Internal demand from GenAI Guild and Business Development",
+      "Fortnightly alignment and four-week UAT cycles",
+      "Discovery included six external companies",
+      "Early model estimated 60–85% less first-pass review time",
+      "Early model estimated 2–4× greater company coverage",
     ],
-    status: "In use · expanding",
+    status: "Beta delivered · handed over",
   },
   {
     title: "MineMatch",
@@ -86,7 +84,7 @@ export const featuredWork: FeaturedWork[] = [
     summary:
       "For a Solita industry capstone, I led a five-person international team developing a data-space concept for matching mining-sector material and waste streams with potential users.",
     contribution:
-      "I combined project leadership and stakeholder negotiation with hands-on platform work, helping design the APIs, traceable data-sharing flows and interfaces needed to exchange information across providers.",
+      "I combined project leadership and stakeholder negotiation with hands-on platform work, designing APIs and traceable data-sharing flows and prototyping Digital Product Passports on Hyperledger Fabric.",
     outcome:
       "The project tested both the technical platform and the commercial, sustainability and trust conditions required for cross-organisational adoption.",
     evidence: [
@@ -141,18 +139,34 @@ export const experience: Company[] = [
     company: "TNO",
     meta: "Netherlands Organisation for Applied Scientific Research",
     location: "The Hague, Netherlands",
-    period: "September 2024–present",
+    period: "September 2024–August 2026",
     summary:
-      "I work where applied research meets product creation and delivery—turning emerging technical capabilities into products with a clear user, validated use case and route to adoption. My TNO work has also placed me in public-sector and multi-partner consortium environments, including Horizon Europe-related collaboration.",
+      "At TNO, I worked across organisation strategy, multi-partner programme delivery, AI programme evaluation, product ownership and additional advisory work with research, government, industry and business teams.",
     roles: [
       {
         title: "Product Owner — Market Intelligence Platform",
-        period: "January 2026–present",
+        period: "January 2026–August 2026",
         points: [
-          "Identified the opportunity, developed the initial product concept and methodology, and connected it to TNO's wider GenAI ambitions.",
-          "Led discovery with analysts, Market Strategy, Business Development and six external companies to validate decision needs and use cases.",
-          "Designed and developed the interpretation layer: schemas, prompts, classification logic, validation rules and supporting architecture.",
-          "Maintained continuity across users, data scientists and business stakeholders while building sponsorship with the GenAI Guild and Business Development for reuse in other data-focused products.",
+          "Led 20+ discovery and prioritisation workshops across 10 stakeholder groups, including six external companies, to map workflows, test assumptions and rank use cases by decision value, feasibility and readiness.",
+          "Owned the roadmap and backlog for a five-person AI team, translating discovery into user stories and acceptance criteria while running fortnightly stakeholder alignment and four-week validation and UAT cycles.",
+          "Designed a human-in-the-loop operating model that linked LLM outputs to source evidence, tested extraction against ground truth and fed analyst review back into validation logic and roadmap decisions.",
+          "Narrowed 15 GenAI experiments to seven beta capabilities and three priority investments; moved the platform into beta with approximately 25 participants and handed over the roadmap and feedback cycle.",
+          "Built a value model covering review effort, processing volume, analyst coverage and refresh speed; early estimates indicated 60–85% less first-pass review time and two to four times greater company coverage.",
+        ],
+      },
+      {
+        title: "AI Strategy & Programme Evaluation",
+        period: "2026",
+        points: [
+          "Evaluated an eight-year organisational AI programme by reviewing collaboration outcomes, programme evidence and stakeholder perspectives.",
+          "Analysed lasting outcomes, failure modes, sector conversion and funding leverage to inform reinvestment and successor-programme priorities.",
+        ],
+      },
+      {
+        title: "Additional advisory work — Data maturity",
+        period: "2026",
+        points: [
+          "Conducted data-maturity assessments with Data & Analytics, identifying data management, stewardship and quality constraints affecting the organisation's ability to scale AI.",
         ],
       },
       {
@@ -160,17 +174,17 @@ export const experience: Company[] = [
         period: "May 2025–December 2025",
         points: [
           "Coordinated five applied-research projects involving customers, government organisations, industry partners and internal specialists.",
-          "Managed changing priorities, cross-project dependencies and delivery expectations across a multi-partner environment.",
-          "Negotiated a reduced scope that preserved customer value when a consortium partner sought to withdraw.",
+          "Negotiated a reduced scope after a consortium partner withdrew, preserving customer value and securing an outcome accepted by the customer, partner and research team.",
+          "Scoped the transition of an HPC-dependent air-quality model into a smartphone-accessible service for non-technical users in Kenya.",
         ],
       },
       {
         title: "Organisation Strategy Consultant — Geological Survey of the Netherlands",
         period: "September 2024–April 2025",
         points: [
-          "Facilitated root-cause analysis across six departments to understand recurring handover and delivery problems.",
-          "Mapped ownership and workflow bottlenecks across organisational boundaries.",
-          "Designed a repeatable governance framework that clarified cross-team responsibilities and collaboration.",
+          "Mapped the value chain, products, data sources, system dependencies and accountable owners across six departments with Enterprise Architecture.",
+          "Used A3 and 5 Whys workshops to turn recurring handover, ownership and prioritisation problems into a repeatable governance framework and shared Confluence catalogue.",
+          "Embedded the framework in cross-department planning and trained six deputy managers to take implementation forward.",
         ],
       },
     ],
@@ -178,19 +192,20 @@ export const experience: Company[] = [
   {
     company: "Flex Ltd.",
     meta: "Integration Solutions Consultant",
-    location: "Chennai, India",
+    location: "India · Southeast Asia · Mexico",
     period: "October 2020–July 2022",
     summary:
-      "This is where I learned what dependable technology means under real operational pressure: production data, factory systems and business processes that cannot simply stop when an interface fails.",
+      "This is where I learned what dependable technology means under real operational pressure: designing, releasing and supporting the data flows behind factory, quality, warehouse, workforce and supply-chain operations.",
     roles: [
       {
         title: "Integration Solutions Consultant",
         period: "October 2020–July 2022",
         points: [
-          "Built and supported more than 10 MuleSoft integrations across factories in India and Southeast Asia.",
-          "Connected MES, QMS, WMS, ERP, workforce and identity systems through API, batch and event-driven patterns.",
-          "Translated operational requirements into data mappings, interface specifications and clear system boundaries.",
-          "Reduced integration processing time by 70% and strengthened batch reliability through a structural redesign.",
+          "Designed and delivered 10+ MuleSoft integrations connecting PLM, MES, QMS, WMS, ERP, workforce and identity systems across international manufacturing operations.",
+          "Translated operational needs into process maps, data mappings and interface specifications, choosing API, batch or event-driven patterns and coordinating releases across four controlled environments.",
+          "Owned production support and incident investigation using centralised logs, SQL, Postman and ELK, working directly with factory and application teams when live flows failed.",
+          "Coordinated a move from on-premise servers and databases to a Zoho cloud platform, working with the vendor to close capability gaps and shape the expansion roadmap.",
+          "Reduced integration processing time by 70% and eliminated recurring skipped batch records by redesigning selection logic around reliable cloud-ingestion timestamps.",
         ],
       },
     ],
@@ -199,32 +214,43 @@ export const experience: Company[] = [
 
 export const capabilities = [
   {
-    title: "Product creation and discovery",
-    body: "Ideation, problem framing, customer discovery, use-case validation, roadmaps, backlogs and the transition from technical opportunity to adopted product.",
+    title: "Product discovery and direction",
+    body: "Problem framing, user and customer discovery, value-based prioritisation, roadmaps, backlogs, user stories, acceptance criteria and UAT.",
   },
   {
-    title: "Technical product building",
-    body: "Architecture, interpretation and validation logic, applied AI, enterprise integration, data flows, hands-on prototyping and production reliability.",
+    title: "AI and data products",
+    body: "Human-in-the-loop workflows, schemas, prompts, classification, ground-truth evaluation, validation, provenance and source traceability.",
   },
   {
-    title: "Adoption and multi-stakeholder innovation",
-    body: "Building sponsorship and demand across business, research, government and industry; navigating governance, competing incentives and collaboration across organisational boundaries.",
+    title: "Operational systems",
+    body: "Enterprise integration, system boundaries, data flows, release coordination, production support and reliability across factory and business platforms.",
+  },
+  {
+    title: "Transformation and adoption",
+    body: "Operating models, governance, root-cause analysis, resistance management and alignment across business, research, government and industry.",
   },
 ];
 
 export const toolkit = [
-  ["Integration", "MuleSoft · REST · SOAP · batch · events · RabbitMQ · Azure Event Hubs · MQTT"],
   [
-    "Cloud & data",
-    "Azure · Python · SQL · PostgreSQL · schemas · prompts · classification · Pydantic · Docker",
+    "Product & delivery",
+    "Discovery · roadmaps · backlogs · user stories · acceptance criteria · UAT · Agile/Scrum · value models",
   ],
   [
-    "Product",
-    "Ideation · discovery · use-case validation · roadmaps · backlogs · user stories · acceptance criteria",
+    "AI & data",
+    "Human-in-the-loop workflows · LLM evaluation · ground truth · schemas · prompts · Python · SQL · Pydantic · PostgreSQL",
   ],
   [
-    "Collaboration",
-    "Internal sponsorship · GenAI alignment · consortium delivery · stakeholder facilitation · cost modelling",
+    "Integration & operations",
+    "MuleSoft · REST/SOAP · DataWeave · batch · events · RabbitMQ · Azure Event Hubs · MES · QMS · WMS · ERP · IAM",
+  ],
+  [
+    "Analysis & transformation",
+    "Service blueprints · user journeys · BPMN · ArchiMate · Obeya · A3 · 5 Whys · operating models · governance",
+  ],
+  [
+    "Platforms & tools",
+    "Azure · Azure DevOps · Jira · Confluence · draw.io · Postman · ELK · Zoho · Docker · MQTT · Hyperledger Fabric",
   ],
 ] as const;
 
@@ -251,3 +277,18 @@ export const languages = [
   { name: "Tamil", level: "C2" },
   { name: "Hindi", level: "A2" },
 ];
+
+export const recognition = [
+  {
+    title: "Smart India Hackathon winner",
+    detail: "First of 150+ teams · RFID toll prototype · 2019",
+  },
+  {
+    title: "Tamil Nadu Government grant",
+    detail: "Early blockchain applications for public services · 2018",
+  },
+  {
+    title: "Solve the SDGs runner-up",
+    detail: "SpinGreen circular-fashion concept with Spinnova · 2023",
+  },
+] as const;

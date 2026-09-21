@@ -4,7 +4,7 @@ import { Section } from "./Section";
 
 export function Work() {
   return (
-    <Section id="work" label="Selected work" title="Things that made it past the whiteboard.">
+    <Section id="work" label="Work" title="Selected products and projects">
       <div className="divide-y divide-rule border-y border-rule">
         {featuredWork.map((project, index) => (
           <Reveal as="article" key={project.title} delay={index * 60} className="py-10 md:py-14">
@@ -16,7 +16,7 @@ export function Work() {
                   <span className="label-mono">{project.status}</span>
                 </div>
                 <p className="mt-5 label-mono">{project.category}</p>
-                <h3 className="mt-3 text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
+                <h3 className="mt-3 font-display text-3xl font-medium tracking-tight text-foreground md:text-4xl">
                   {project.title}
                 </h3>
                 <p className="mt-3 max-w-sm text-sm font-medium leading-relaxed text-accent-strong">
@@ -55,8 +55,8 @@ export function Work() {
       <Reveal className="mt-14 md:mt-16">
         <div className="max-w-2xl">
           <p className="label-mono">Other projects</p>
-          <h3 className="mt-3 text-2xl font-semibold tracking-tight text-foreground">
-            A few worthwhile side quests.
+          <h3 className="mt-3 font-display text-3xl font-medium tracking-tight text-foreground">
+            Other projects
           </h3>
         </div>
 
@@ -71,7 +71,7 @@ export function Work() {
                 <span className="label-mono">{project.role}</span>
               </div>
               <p className="mt-7 label-mono">{project.category}</p>
-              <h4 className="mt-2 text-xl font-semibold tracking-tight text-foreground">
+              <h4 className="mt-2 font-display text-2xl font-medium tracking-tight text-foreground">
                 {project.title}
               </h4>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">

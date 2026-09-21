@@ -10,9 +10,9 @@ export function Contact() {
             <p className="label-mono">Contact</p>
             <h2
               id="contact-title"
-              className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight text-foreground md:text-5xl"
+              className="mt-3 max-w-3xl font-display text-4xl font-medium leading-[1.02] tracking-[-0.03em] text-foreground md:text-6xl"
             >
-              Let’s talk about what you’re trying to make work.
+              Contact
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
               I am always interested in thoughtful conversations about product creation, applied AI,
@@ -21,7 +21,7 @@ export function Contact() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href={`mailto:${profile.email}`}
-                className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center bg-primary px-5 py-3 text-sm font-medium text-primary-foreground hover:bg-foreground"
               >
                 Write to me
               </a>
@@ -29,7 +29,7 @@ export function Contact() {
                 href={profile.cv}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex items-center justify-center rounded-md border border-rule px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent"
+                className="inline-flex items-center justify-center border border-foreground px-5 py-3 text-sm font-medium text-foreground hover:bg-foreground hover:text-background"
               >
                 Read my CV ↗
               </a>

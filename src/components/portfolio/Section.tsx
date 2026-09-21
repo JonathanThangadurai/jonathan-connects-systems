@@ -25,7 +25,7 @@ export function Section({
           <p className="label-mono">{label}</p>
           <h2
             id={`${id}-title`}
-            className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight text-foreground md:text-4xl"
+            className="mt-3 max-w-4xl font-display text-4xl font-medium leading-[1.02] tracking-[-0.03em] text-foreground md:text-5xl"
           >
             {title}
           </h2>

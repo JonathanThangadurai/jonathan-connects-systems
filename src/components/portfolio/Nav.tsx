@@ -55,7 +55,7 @@ export function Nav() {
                   rel="noreferrer noopener"
                   className={
                     index === 0
-                      ? "inline-flex rounded border border-rule px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:border-accent-strong hover:text-accent-strong"
+                      ? "inline-flex border border-foreground px-3 py-1.5 text-xs font-medium text-foreground hover:bg-foreground hover:text-background"
                       : "px-1.5 py-2 text-xs text-muted-foreground transition-colors hover:text-foreground"
                   }
                 >
@@ -68,7 +68,7 @@ export function Nav() {
 
         <button
           type="button"
-          className="inline-flex h-9 w-9 items-center justify-center rounded border border-rule text-foreground lg:hidden"
+          className="inline-flex h-9 w-9 items-center justify-center border border-foreground text-foreground lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}

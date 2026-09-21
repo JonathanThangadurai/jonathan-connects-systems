@@ -4,7 +4,7 @@ import { Section } from "./Section";
 
 export function About() {
   return (
-    <Section id="about" label="About & approach" title="Why technology is never the whole story.">
+    <Section id="about" label="About" title="Background and approach">
       <div className="grid gap-12 md:grid-cols-[1.2fr_0.8fr] md:gap-20">
         <Reveal className="space-y-5">
           {aboutParagraphs.map((paragraph) => (
@@ -15,13 +15,10 @@ export function About() {
               {paragraph}
             </p>
           ))}
-          <blockquote className="mt-8 border-l-2 border-accent-strong pl-5 text-xl font-medium leading-snug tracking-tight text-foreground md:text-2xl">
-            “The product is only one part of the system that makes it useful.”
-          </blockquote>
         </Reveal>
 
         <Reveal delay={80}>
-          <p className="label-mono">How I approach complex problems</p>
+          <p className="label-mono">Areas I consider in product decisions</p>
           <dl className="mt-4 divide-y divide-rule border-y border-rule">
             {systemsLens.map((item, index) => (
               <div key={item.title} className="grid grid-cols-[2rem_1fr] gap-3 py-4">
